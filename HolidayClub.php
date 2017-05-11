@@ -7,7 +7,7 @@ $holidayTitle = "Holiday Club " . $today['year'];
 // Easter Holiday
 if ($today['mday'] <= "21" && $today['mon'] == "4") {$holidayTitle = "Easter Holiday Club " . $today['year'];}
 // May Holiday
-if (($today['mday'] <= "31" && $today['mon'] == "5") || ($today['mday'] <= "4" && $today['mon'] == "6")) {$holidayTitle = "Summer</br>Half-Term</br>" . $today['year'];}
+if (($today['mday'] <= "31" && $today['mon'] == "5") || ($today['mday'] <= "4" && $today['mon'] == "6")) {$holidayTitle = "Summer</br>Half-Term</br><b>" . $today['year'] . "</b>";}
 // Summer Holiday
 if (($today['mday'] <= "26" && $today['mon'] == "6") || ($today['mday'] <= "1" && $today['mon'] == "9")) {$holidayTitle = "Summer " . $today['year'];}
 
