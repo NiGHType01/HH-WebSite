@@ -1,0 +1,26 @@
+Week Two,,,,,,,,,0
+fri31,,,Friday 31st July, ,17.00,27.00,16.00,16.00,0
+Week Three,,,,,,,,,0
+mon03,,,Monday  3rd August, ,17.00,27.00,16.00,16.00,0
+tue04,,,Tuesday 4th August, ,17.00,27.00,16.00,16.00,0
+wed05,,,Wednesday 5th August, ,17.00,27.00,16.00,16.00,0
+thu06,,,Thursday 6th August, ,17.00,27.00,16.00,16.00,0
+fri07,,,Friday 7th August, ,17.00,27.00,16.00,16.00,0
+Week Four,,,,,,,,,0
+mon10,,,Monday 10th August, ,17.00,27.00,16.00,16.00,0
+tue11,,,Tuesday 11th August, ,17.00,27.00,16.00,16.00,0
+wed12,,,Wednesday 12th August, ,17.00,27.00,16.00,16.00,0
+thu13,,,Thursday 13th August, ,17.00,27.00,16.00,16.00,0
+fri14,,,Friday 14th August, ,17.00,27.00,16.00,16.00,0
+Week Five,,,,,,,,,0
+mon17,,,Monday 17th August, ,17.00,27.00,16.00,16.00,0
+tue18,,,Tuesday 18th August, ,17.00,27.00,16.00,16.00,0
+wed19,,,Wednesday 19th August, ,17.00,27.00,16.00,16.00,0
+thu20,,,Thursday 20th August, ,17.00,27.00,16.00,16.00,0
+fri21,,,Friday 21st August, ,17.00,27.00,16.00,16.00,0
+Week Six,,,,,,,,,0
+mon24,,,Monday 24th August, ,17.00,27.00,16.00,16.00,0
+tue25,,,Tuesday 25th August, ,17.00,27.00,16.00,16.00,0
+wed26,,,Wednesday 26th August, ,17.00,27.00,16.00,16.00,0
+thu27,,,Thursday 27th August, ,17.00,27.00,16.00,16.00,0
+fri28,,,Friday 28th August, ,17.00,27.00,16.00,16.00,0

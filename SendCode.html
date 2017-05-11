@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SEC - Assignment 2 [login page]</title>
+	</head>
+    <body>
+	<script type="application/javascript" src="js/md5.js"           ></script>
+	<script type="application/javascript" src="js/caesar.js"        ></script>
+	<form id="formOne" action="http://yallara.cs.rmit.edu.au/~s3445274/sec/RecvCode.php" onsubmit="return noEmpty();" methord="post">
+		
+		<span>Cipher Type : </span>
+		<input id="type" type="text" value="Caesar" onkeyup="validateCipher();" onblur="validateCipher();" onclick="clearImg();" maxlength="5" disabled/>
+		<input id="cType" name="cipher" type="hidden" value="Caesar"/>
+		<label id="typeError" style="visibility:hidden; color:red;" >only valid cipher types allowed</label>
+		<br><br>
+		
+		<span>Cipher Key : </span>
+		<input id="key" type="text" value="3" onkeyup="validateKey();" onblur="validateKey();" onclick="clearImg();" maxlength="2" disabled/>
+		<input id="ckey" name="cipherKey" type="hidden" />
+		<label id="keyError" style="visibility:hidden; color:red;" >only valid key allowed</label>
+		<br><br>
+		
+		<span>eMail : </span>
+		<input id="eMail" type="text" size="50" onkeyup="validateEmail();" onblur="validateEmail();" onclick="clearImg();" />
+		<input id="ecEmail" name="email" type="hidden" />
+		<label id="emailError" style="visibility:hidden; color:red;" >Only valid email/characters accepted</label>
+		<br><br>
+		
+		<span>User Name : </span>
+		<input id="userName" type="text" size="9" onkeyup="validateUser();" onblur="validateUser();" onclick="clearImg();" maxlength="8"/>
+		<input id="ecUserName" name="userID" type="hidden" />
+		<label id="userError" style="visibility:hidden; color:red;" >Only lowercase letters & numbers accepted</label>
+		<br><br>
+		
+		<span>Password : </span>
+		<input id="password"  type="password" size="9" onkeyup="validatePwd();" onblur="validatePwd();" onclick="clearImg();" maxlength="8" />
+		<input id="passHash"  type="hidden" value="" />
+		<input id="ecPassHash" name="userPwd" type="hidden" />
+		<label id="passError" style="visibility:hidden; color:red;" >Password must be 8 characters</label>
+		<br><br>
+		
+		<span>Credit Card Number : </span>
+		<input id="creditCard" type="text" size="20" onkeyup="validateCard();" onblur="validateCard();" onclick="clearImg();" maxlength="19"  />
+		<input id="ecCard" name="card" type="hidden" />
+		<label id="cardError"  style="visibility:hidden; color:red;" >Credit card must be 16 digits</label>
+		<br><br>
+		
+		<input type="submit" value="Press me to POST" />
+		<img id="okImage" style="visibility:hidden; width: 2%;" src="" alt=""></img>
+		<label id="okText" style="visibility:hidden; color:red;" ><b>No box can be empty!</b></label>
+	</form>
+	
+	
+		<script type="application/javascript" src="js/validateInput.js" ></script>
+	</body>
+</html>

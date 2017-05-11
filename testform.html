@@ -1,0 +1,152 @@
+<?php 
+$pageName = "Schools";
+$pageTitle = "Hebble Harlequins &#64; Gail &amp; Jason's - " . $pageName . " ( Award winning childcare &amp; out of schools club )";
+$totalPages = array( 0 => "Welcome Page",
+					 1 => "Sessions &amp; Fees",
+					 2 => "Schools",
+					 3 => "Contact Us",
+					 4 => "Forms &amp; PDF(s)",
+					 5 => "Our Friends",
+					 6 => "Calendar",
+					 7 => "Google Map",
+					 8 => "News!" );
+function navActive( $i, $pgn ){
+	if ( $pgn == $i ) { return "class='active'"; } else { return ""; }
+}
+include('HolidayClub.php');
+include('head.php');
+include('header.php');
+include('nav.php');
+include('modalpanel.php');
+?>
+				<!-- SCROLLING BACKGROUND CONTAINER -->
+				<div id="cols52" class="wallscroll keepLeft heightResizer"></div>
+					<!-- MAIN PAGE CONTENT -->
+					<div id="cols53" class="keepLeft heightResizer ">
+						<div class="hhlogo" ><img class="hh_img" src="images/logo.gif" alt="" ></div>
+						<div id="main" >
+							<div id="content" >
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->
+								<div id="form_container">
+									<form id="XmasForm" method="get" action="HH_SpringBankBooking">
+									<div class="form_description">
+										<h2>Christmas Holiday Club</h2>
+										<p>Please complete and return the <strong>Christmas Holiday booking form</strong> below by<br/><strong>Monday 16th December 2103</strong></p>
+									</div>						
+										<ul>
+											<li>
+												<label class="description" form="childName">Child's Name: </label>
+												<span>
+													<input id="childsName" name="childsName" class="text" maxlength="255" size="8" value="" type="text"/>
+													<label>First</label>
+												</span>
+												<span>
+													<input id="childsSurname" name="childsSurname" class="text" maxlength="255" size="14" value="" type="text"/>
+													<label>Last</label>
+												</span> 
+											</li>
+											<li>
+												<label class="description" form="dob">Date of birth: </label>
+												<span>
+													<input id="day" name="day" class="text" size="2" maxlength="2" value="" type="text"> /
+													<label for="day">DD</label>
+												</span>
+												<span>
+													<input id="month" name="month" class="text" size="2" maxlength="2" value="" type="text"> /
+													<label for="month">MM</label>
+												</span>
+												<span>
+													<input id="year" name="year" class="text" size="4" maxlength="4" value="" type="text">
+													<label for="year">YYYY</label>
+												</span>
+											</li>
+											<li>
+												<label class="description" form="gender">Gender: </label>
+												<span>
+													<input id="boy" name="gender" class="radio" type="radio" value="1" />
+													<label class="choice" for="boy">Boy</label>
+												</span>
+												<span>
+													<input id="girl" name="gender" class="radio" type="radio" value="2" />
+													<label class="choice" for="girl">Girl</label>
+												</span> 
+											</li>
+											<li>
+											<div width="70%" >
+												<label class="description" form="address">Address: </label>
+												<div>
+													<textarea class="text" rows="5" cols="60" name="address" form="XmasForm">
+													</textarea>
+												</div>
+												<div class="left" style="display: block;">
+													<input id="town" name="town" class="text medium" value="" type="text">
+													<label for="town">Town</label>
+													<input id="county" name="county" class="text medium" value="" type="text">
+													<label for="county">County</label>
+												</div>
+											</div>
+											</li>
+											<li>
+												<label class="description" for="contactNo">Contact Number: </label>
+												<div>
+													<input id="contactNo" name="contactNo" class="text medium" maxlength="255" value="" type="text"/> 
+												</div> 
+											</li>
+											<li>
+												<label class="description" for="contactName">Contact Name: </label>
+												<span>
+													<input id="contactName" name="contactName" class="text" maxlength="255" size="8" value="" type="text"/>
+													<label>First</label>
+												</span>
+												<span>
+													<input id="contactSurname" name="contactSurname" class="text" maxlength="255" size="14" value="" type="text"/>
+													<label>Last</label>
+												</span> 
+											</li>
+											<li>
+												<div class="form_description">
+													<p>
+														<i>The Holiday Club will only run if there is enough demand and there is sufficient income to cover the running costs.<i><br/><br/>
+														A decision is made as soon as possible after the deadline date in order to let people make alternative arrangements if necessary.
+													</p>
+													<p>													
+														<em>EVERY booking for the holiday club must be paid in FULL on return of this booking form to secure your place.</em>
+														This form must be handed in by the deadline date. <em>Monday 16th December 2103</em>.<br /><br />
+														Your child is required to bring a packed lunch every day they attend the holiday club.
+														<br/>Breakfast is served before 9.00am and a snack is offered after 16.00pm.
+													</p>
+												</div>
+											</li>
+											<li>
+												<label class="description" form="sp_bookingDates"></label>
+<?php holidayClubFormTabel() ?>
+											</li>
+											<li>
+												<label class="description" for="parentName">Parents/Carer Name: </label>
+												<div>
+													<input id="parentName" name="parentName" class="text medium" type="text" maxlength="255" value=""/> 
+												</div> 
+											</li>
+											<li class="buttons">
+												<input type="hidden" name="form_id" value="sp2013" />
+												<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+											</li>
+										</ul>
+									</form>	
+									<div id="footer">
+										&copy Copyright 2013 N. D. Spencer
+									</div>
+								</div><img id="bottom" src="images/bottom.png" alt="">
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->						
+							</div><!-- Content closed-->
+						</div> <!-- main Closed -->
+					</div> <!-- cols53 Closed -->
+					<div id="cols54" class="heightResizer"></div>
+		</div> <!-- row5 Closed -->
+		<div id="row6" class="windowWidth">
+			<footer>
+				<div id="cols61" class="row1346Height strip"></div><div id="cols62" class="row1346Height strip"></div><div id="cols63" class="row1346Height strip"></div><div id="cols64" class="row1346Height strip"></div><div id="cols65" class="row1346Height strip"></div>
+			</footer>
+		</div>
+	</body>
+</html>

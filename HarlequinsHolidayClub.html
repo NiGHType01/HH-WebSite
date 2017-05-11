@@ -1,0 +1,23 @@
+<?php 
+$pageName = "Sessions &amp; Fees";
+include('totalPages.php');
+include('HolidayClub.php');
+include('head.php');
+include('header.php');
+include('nav.php');
+include('modalpanel.php');
+include('scrollBarContainer.php');
+?>
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->
+								<h1>Holiday Club</h1>
+								<?php holidayClubTabel( $holidayTitle ); ?>
+								<hr/>
+								<p class="clbInfo"><strong>Half Day 8:30am - 3:30pm </strong><i>( <?php echo $HC_hds; ?> )</i>
+									| <strong>Full Day 7:00am - 6:00pm </strong><i>( <?php echo $HC_fs; ?> )</i></p>
+								<p class="clbInfo"><strong>Morning 7:00am - 1:00pm </strong><i>( <?php echo $HC_am; ?> )</i>
+									| <strong>Afternoon 12:00pm - 6:00pm </strong><i>( <?php echo $HC_pm ?> )</i></p>
+								<span>There is an extra charge per child for trips, confirmed in advance
+								(we try to keep this to a minimum, where possible).</span>
+								<hr>
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->						
+<?php include('bottomPage.php'); ?>

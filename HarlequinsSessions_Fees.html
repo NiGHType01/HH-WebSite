@@ -1,0 +1,87 @@
+<?php 
+$pageName = "Sessions &amp; Fees";
+include('totalPages.php');
+include('HolidayClub.php');
+include('head.php');
+include('header.php');
+include('nav.php');
+include('modalpanel.php');
+include('scrollBarContainer.php');
+?>
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->
+								<h1><?php echo $pageName; ?></h1>
+								<table class="hhTable" >
+									<thead>
+										<tr><th colspan="2"><b>Session</b></th><th ><b>Times</b></th><th ><b>Price</b></th></tr>
+									</thead>
+									<tr>
+										<td colspan="2"><a href="HarlequinsBreakfastClub.html">BREAKFAST</a></td>
+										<td >7:00am - 9:00am</td>
+										<td ><?php echo $BF_club; ?> <br/><small>(Breakfast sessions are all inclusive)</small></td>
+									</tr>
+									<tr>
+										<td colspan="2"><a href="HarlequinsbbBreakfastClub.html">BREAKFAST - Bolton Brow</a></td>
+										<td >7:30am - 9:00am</td>
+										<td ><?php echo $BF_club; ?> <br/><small>(Breakfast sessions are all inclusive)</small></td>
+									</tr>
+									<tr>
+										<td colspan="2"><a href="HarlequinsAfterSchoolClub.html">AFTER SCHOOL</a></td>
+										<td >3:00pm - 6:00pm</td>
+										<td ><?php echo $AS_club; ?> <small>(3rd Child half price)</small></td>
+									</tr>
+									<tr>
+										<td colspan="2"><a href="HarlequinsbbAfterSchoolClub.html">AFTER SCHOOL  - Bolton Brow</a></td>
+										<td >3:00pm - 6:00pm</td>
+										<td ><?php echo $AS_club; ?> <small>(3rd Child half price)</small></td>
+									</tr>
+									<tr>
+										<td rowspan="2" ><a href="HarlequinsWrapAround.html">WRAP AROUND<br/>Pre-school children</a></td>
+										<td><b>Morning</b></td>
+										<td>7:00am - 9:30am</td>
+										<td><?php echo $WRAP_am; ?> <small>(3rd Child half price)</small></td>
+									</tr>
+									<tr>
+										<td>Afternoon</td>
+										<td>2:30pm - 6:00pm</td>
+										<td><?php echo $WRAP_pm; ?> <small>(3rd Child half price)</small></td>
+									</tr>
+									<tr>
+										<td rowspan="4"><a href="HarlequinsHolidayClub.html">HOLIDAY CLUB</a></td>
+										<td><b>Half Day</b></td>
+										<td>8:30am - 3:30pm</td>
+										<td><?php echo $HC_hds; ?> <small>(3rd Child half price)</small></td>
+									</tr>
+									<tr>
+										<td>Full Day</td>
+										<td>7:00am - 6:00pm</td>
+										<td><?php echo $HC_fs; ?> <small>(3rd Child half price)</small></td>
+									</tr>
+									<tr>
+										<td>Morning</td>
+										<td>7:00am - 1:00pm</td>
+										<td><?php echo $HC_am; ?> <small>(3rd Child half price)</small></td>
+									</tr>
+									<tr>
+										<td>Afternoon</td>
+										<td>12:00pm - 6:00pm</td>
+										<td><?php echo $HC_pm; ?> <small>(3rd Child half price)</small></td>
+									</tr>
+								</table>
+								<br>
+								<p>Occasionally there is an extra charge for trips during Holiday Club, confirmation will be given in advance<br/>
+								(we try to keep this to a minimum, where possible).</p>
+								<hr/>
+								<p class="hhTable"><strong>All fees are to be paid in advance.</strong><br/></p>
+								<span>Monthly (half term or full term), Weekly or by Vouchers.<br/><br/>
+								A payment plan will be agreed on completion of registration for your child/children.<br/>
+								Payments can be made by cash, direct debit or vouchers <b><i>(We do not accept cheques as payment).</i></b><br/><br/>
+								<em>Direct Debit or Voucher payment details will be given on request.</em>
+								<br/><br/>We accept voucher payments from the following:<br/>
+								<a href="http://www.edenred.co.uk/">Edenred</a>, <a href="https://www.care-4.co.uk/PagesUnAuth/Default.aspx?ReturnUrl=%2fdefault.aspx">Care4</a>, <a href="http://pages.childcarevouchers.co.uk/google/ccvemployers.html?gclid=CI31vvybzLECFSgntAodM3gA8Q"> Computer Voucher Services</a>, <a href="https://www.fideliti.co.uk/default.aspx">Fideliti Ltd</a>,
+								<br/>Oracle Financial and <a href="http://www.kiddivouchers.com/">KiddiVouchers</a>
+								<hr/>
+								<strong>All Hebble Harlequins booking fees, must be paid for whether or not your child attends.</strong><br/>
+								</span>
+								<hr/>
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->						
+<?php include('bottomPage.php'); ?>

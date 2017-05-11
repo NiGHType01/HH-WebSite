@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" charset="utf-8" />
+    <title>Kill The Silence</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<link href="css/bootstrap.css" rel="stylesheet" /> <!-- Bootstrap CSS -->
+    <link href="css/ktsstyle.css" rel="stylesheet" /> <!-- User defined CSS -->
+    <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+	<script type="text/javascript">
+	$( function() {
+		$('.wallscroll').bgscroll({direction:'v' });
+	});
+	</script>
+	<style type="text/css">
+	body {background: gray}
+	.wallscroll {
+		background: black url(images/bg_clouds.png) repeat 0 bottom;
+		float:left;
+	</style>
+</head>
+	<body class="wallscroll">
+<div class="container" >   
+		<div class="row">
+			<header><div id="top" class="boxer"><h1>Kill The Silence</h1></div></header>
+		</div><!-- /.header-wrapper -->
+
+	<div class="row" >
+		<div id="kts-carousel" class="carousel slide"><!-- class of slide for animation -->
+			<div class="carousel-inner">
+				<div class="item active"><!-- class of active since it's the first item -->
+					<img src="images/kts0.png" alt="" /></div>
+				<div class="item">
+					<img src="images/kts1.png" alt="" /></div>
+				<div class="item">
+					<img src="images/kts2.png" alt="" /></div>
+				<div class="item">
+					<img src="images/kts3.png" alt="" /></div>
+			</div><!-- /.carousel-inner -->
+			<!--  Next and Previous controls below href values must reference the id for this carousel -->
+			<a class="carousel-control left" href="#kts-carousel" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#kts-carousel" data-slide="next">&rsaquo;</a>
+		</div><!-- /.carousel -->
+	</div> <!-- Close Row -->
+		<div class="row">
+			<div id="menu" class="boxer">
+				<nav>
+					<ul class="menubar">
+						<li id="merch"><a href="merch.html" target="contect" >Merchandise</a></li>
+						<li id="gigs"><a href="gigs.html" target="content" >Gigs Line Up</a></li>
+						<li id="about"><a href="about.html" target="content" >About Us</a></li>
+						<li id="music"><a href="music.html" target="content" >Music</a></li>
+						<li id="downloads"><a href="downloads.html" target="content" >Downloads</a></li>
+					</ul>
+            <p><a href="#myModal" role="button" class="download" data-toggle="modal">Launch modal demo</a></p>
+            <!-- modal panel -->
+            <div id="myModal" class="modal hide fade" tabindex="-1" 
+               role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Modal header</h3>
+               </div>
+               <div class="modal-body">
+                  <p>One fine body…</p>
+               </div>
+               <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <button class="btn btn-primary">Save changes</button>
+               </div>
+            </div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="row">
+	
+			<section id="content-wrapper">
+				<div class="span8">
+					<p>content row - first column span8</p>
+				</div>
+				<div class="span4">
+					<p>content row - second column span4</p>
+				</div>
+			</section>
+         
+      </div>
+
+		<div class="row">
+			<footer>
+				<div class="span12">
+					<p>footer row</p>
+				</div>
+			</footer>
+		</div><!-- /.footer-wrapper -->    
+		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ <!--   <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- Bootstrap jQuery plugins compiled and minified -->
+ <!--   <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/jquery-latest.js"></script> <!-- JQuery JS -->
+    <script src="js/bootstrap.js"></script> <!-- Bootstrap JS -->
+	
+	<script src="js/kts.js"></script>
+	<script src="js/jquery.bgscroll.js"></script>
+</body>
+</html>

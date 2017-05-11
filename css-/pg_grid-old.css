@@ -1,0 +1,37 @@
+/* header bar */
+#row1	{width: 100%;  height: 7px; background: black url(../images/topbannermain.gif);}
+#cols11	{width: 394px; height: 7px; background: black url(../images/topbannerleft.gif); float: left;}
+#cols12	{width: 7px;   height: 7px; background: black url(../images/topbannerend.gif); float: right;}
+
+#cols122 {max-width: 7px 
+
+
+
+
+
+
+
+
+
+#row2	{width: 100%;  height: 84px; background-color: #a81423; }
+#cols21	{width: 394px; height: 84px; background: black url(../images/midbannerleft.gif); float: left;}
+#cols22	{width: 7px;   height: 84px; background: black url(../images/midbannerend.gif); float: right;}
+#row3	{width: 100%;  height: 7px; background: black url(../images/botbannermain.gif);}
+#cols31	{width: 394px; height: 7px; background: black url(../images/botbannerleft.gif); float: left;}
+#cols32	{width: 7px;   height: 7px; background: black url(../images/botbannerend.gif); float: right;}
+
+/* Main MENU content area*/
+#row4	{width: 100%;  height: 7px; background-color: #576565 }
+#cols41	{width: 123px; height: 7px; background: black url(../images/topbannerleft.gif); float: left;}
+#cols42	{width: 7px;   height: 7px; background: black url(../images/topbannerend.gif);  float: left;}
+#row5	{width: 100%;  height: 750px; background-color: #576565 }
+#cols51	{width: 123px; height: 750px; background: black url(../images/midbannerleft.gif); float: left;}
+#cols52	{width: 7px;   height: 750px; background: black url(../images/midbannerend.gif);  float: left;}
+
+/* Scrolling image container */
+#cols53	{width: 44px;   height: 750px; float: left;}
+
+/* Main content area */
+#cols54	{width: auto; height: 750px; background-color: white; float: left;}
+
+#main {width:50%;}

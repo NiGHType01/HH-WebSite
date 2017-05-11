@@ -1,0 +1,16 @@
+
+.gridster li {
+	text-decoration: none;
+	background-color: #0044CC;
+	list-style-type: none;
+}
+#gridstuff {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#gridstuff img {
+	height: 140px;
+	width: 140px;
+}

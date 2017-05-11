@@ -1,0 +1,166 @@
+.strip  {width: 5.4%; float: left;}
+.keepLeft {float: left;}
+.row1346Height {height: 7px;}
+.row2Height {height: 84px;}
+.row5Height {height: 500px;}
+
+/* Header bar (top edge) */
+#row1 {width: 100%; background: #A91624 url(../images/topbanner3.gif);}
+
+#cols11 {width: 7px; background: #A91624 url(../images/tbl.gif); float: left;}
+#cols12 {max-width: 35px; background: #911855 url(../images/topbanner1.gif);}
+#cols13 {max-width: 44px; background: #C82861 url(../images/topbanner2.gif);}
+#cols14 {max-width: 44px; background: #A91624 url(../images/topbanner3.gif);}
+#cols15 {max-width: 44px; background: #0D6036 url(../images/topbanner4.gif);}
+#cols16 {max-width: 44px; background: #48879A url(../images/topbanner5.gif);}
+#cols17 {max-width: 44px; background: #C83C1F url(../images/topbanner6.gif);}
+#cols18 {max-width: 44px; background: #1D2A55 url(../images/topbanner7.gif);}
+#cols19 {max-width: 44px; background: #B51021 url(../images/topbanner8.gif);}
+#cols110 {max-width: 44px; background: #C51225 url(../images/topbanner9.gif);}
+#cols111 {width: 7px; background: #A91624 url(../images/tbr.gif); float: right;}
+
+/* Header bar (middle section edge) */
+#row2 {width: 100%; background-color: #A91624; }
+
+#cols21	{width: 7px; background: #A91624 url(../images/tml.gif); float: left;}
+#cols22 {max-width: 35px; background: #911855; black url(../images/hw1.png);}
+#cols23 {max-width: 44px; background: #C82861;}
+#cols24 {max-width: 44px; background: #A91624;}
+#cols25 {max-width: 44px; background: #0D6036;}
+#cols26 {max-width: 44px; background: #48879A;}
+#cols27 {max-width: 44px; background: #C83C1F;}
+#cols28 {max-width: 44px; background: #1D2A55;}
+#cols29 {max-width: 44px; background: #B51021;}
+#cols210 {max-width: 44px; background: #C51225;}
+#cols211 {width: 7px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(right, #4C040C 0%, #A61221 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(right, #4C040C 0%, #A61221 100%);
+/* Opera */ background-image: -o-linear-gradient(right, #4C040C 0%, #A61221 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #4C040C), color-stop(1, #A61221));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(right, #4C040C 0%, #A61221 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to left, #4C040C 0%, #A61221 100%); float: right;}
+
+/* Header bar (bottom edge) */
+#row3	{width: 100%;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5B050E), color-stop(1, #A61221));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #5B050E 0%, #A61221 100%);}
+
+#cols31  {width: 7px; background: #A91624 url(../images/bbl.gif); float: left;}
+
+#cols32  {max-width: 35px; 
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #4D072A 0%, #901754 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #4D072A 0%, #901754 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #4D072A 0%, #901754 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4D072A), color-stop(1, #901754));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #4D072A 0%, #901754 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #4D072A 0%, #901754 100%);}
+#cols33  {max-width: 44px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #6D1031 0%, #C6245E 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #6D1031 0%, #C6245E 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #6D1031 0%, #C6245E 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #6D1031), color-stop(1, #C6245E));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #6D1031 0%, #C6245E 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #6D1031 0%, #C6245E 100%);}
+#cols34  {max-width: 44px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5B050E), color-stop(1, #A61221));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #5B050E 0%, #A61221 100%);}
+#cols35  {max-width: 44px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #003018 0%, #095D33 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #003018 0%, #095D33 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #003018 0%, #095D33 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #003018), color-stop(1, #095D33));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #003018 0%, #095D33 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #003018 0%, #095D33 100%);}
+#cols36  {max-width: 44px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #234752 0%, #458598 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #234752 0%, #458598 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #234752 0%, #458598 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #234752), color-stop(1, #458598));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #234752 0%, #458598 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #234752 0%, #458598 100%);}
+#cols37  {max-width: 44px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #6D1C0A 0%, #C6361B 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #6D1C0A 0%, #C6361B 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #6D1C0A 0%, #C6361B 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #6D1C0A), color-stop(1, #C6361B));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #6D1C0A 0%, #C6361B 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #6D1C0A 0%, #C6361B 100%);}
+#cols38  {max-width: 44px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #09112A 0%, #1A2752 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #09112A 0%, #1A2752 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #09112A 0%, #1A2752 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #09112A), color-stop(1, #1A2752));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #09112A 0%, #1A2752 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #09112A 0%, #1A2752 100%);}
+#cols39  {max-width: 44px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #5F050E 0%, #AF0E21 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #5F050E 0%, #AF0E21 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #5F050E 0%, #AF0E21 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5F050E), color-stop(1, #AF0E21));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #5F050E 0%, #AF0E21 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #5F050E 0%, #AF0E21 100%);}
+#cols310 {max-width: 44px; 
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #6B030E 0%, #C30E22 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #6B030E 0%, #C30E22 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #6B030E 0%, #C30E22 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #6B030E), color-stop(1, #C30E22));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #6B030E 0%, #C30E22 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #6B030E 0%, #C30E22 100%);}
+#cols311 {width: 7px; background: #A91624 url(../images/bbr.gif); float: right;}
+
+/* MENU top edge {removed when browser window is reduced to below Tablet viewing size} */
+#row4     {width: 100%; background-color: #576565; }
+#cols41 {width: 7px; background: #A91624 url(../images/tbl.gif); float: left;} /* Small image, I don't think this can be done with CSS (If there is a problem with loading this image I have set the BG colour to make it look ok) */
+#cols42 {max-width: 35px; background: #911855 url(../images/topbanner1.gif);} /* Very small image, think this could be done with more CSS */
+#cols43 {max-width: 44px; background: #C82861 url(../images/topbanner2.gif);} /* Very small image, think this could be done with more CSS */
+#cols44 {max-width: 37px; background: #A91624 url(../images/topbanner3.gif);} /* Very small image, think this could be done with more CSS */
+#cols45 {width: 7px; background: #A91624 url(../images/tbr.gif); float: left;} /* Small image, I don't think this can be done with CSS */
+
+#tabletRow4 {width: 100%; height:42px; background-color: #576565; display: inline; padding: 5px 5px 5px 8px;}
+#tabletCol {max-width:99%; height:55px ;}
+
+/* Start main content row "row5", {including left menu bar that is removed when browser window is reduced to below Tablet viewing size} */
+#row5	{width: 100%;  background-color: #576565; min-width: 600px; display: inline;}
+/* Left menu bar */
+#cols51	{width: 130px; background: #A91624 url(../images/menubg.gif);}
+/* Scrolling background image container */
+#cols52	{width: 44px;}
+/* Main content area within row5 */
+#cols53	{width: 84%; background-color: white; overflow-y:hidden; overflow-x: hidden;}
+#cols54  {width: 7px; background-color: #576565; float: right;}
+
+/* Final Row6 {removed when browser window is reduced to below Tablet viewing size} */
+#row6     {width: 100%; background-color: #576565; float: left;}
+#cols61 {width: 7px; background: #A91624 url(../images/bbl.gif); float: left;} /* Bottom menu container */
+#cols62 {max-width: 35px;
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #4D072A 0%, #901754 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #4D072A 0%, #901754 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #4D072A 0%, #901754 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4D072A), color-stop(1, #901754));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #4D072A 0%, #901754 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #4D072A 0%, #901754 100%);}
+
+#cols63 {max-width: 44px; 
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #6D1031 0%, #C6245E 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #6D1031 0%, #C6245E 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #6D1031 0%, #C6245E 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #6D1031), color-stop(1, #C6245E));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #6D1031 0%, #C6245E 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #6D1031 0%, #C6245E 100%);}
+#cols64 {max-width: 37px; 
+/* IE10 Consumer Preview */ background-image: -ms-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Mozilla Firefox */ background-image: -moz-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Opera */ background-image: -o-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* Webkit (Safari/Chrome 10) */ background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5B050E), color-stop(1, #A61221));
+/* Webkit (Chrome 11+) */ background-image: -webkit-linear-gradient(bottom, #5B050E 0%, #A61221 100%);
+/* W3C Markup, IE10 Release Preview */ background-image: linear-gradient(to top, #5B050E 0%, #A61221 100%);}
+
+#cols65 {width: 7px; background: #A91624 url(../images/bbr.gif);  float: left;} /* Small image, I don't think this can be done with CSS */

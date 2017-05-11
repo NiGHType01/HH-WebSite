@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /nathanspencer/
+Disallow: /nathanspencer
+Disallow: /*.zip
+Disallow: /collect*.txt
+disallow: /student2go/

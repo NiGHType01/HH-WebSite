@@ -1,0 +1,44 @@
+<?php 
+$pageName = "Welcome Page";
+include('totalPages.php');
+include('imageCarousel.php');
+include('HolidayClub.php');
+include('head.php');
+include('header.php');
+include('nav.php');
+include('modalpanel.php');
+include('scrollBarContainer.php');
+?>
+<!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->
+								<div id="welcomeText" >
+										<h1>Welcome to<br>Hebble Harlequins &#64; Gail &amp; Jason's</h1>
+										<h4><i>- Also located @ Bolton Brow -</i></h4>
+										<?php imageCarousel(); ?>
+										<br>
+										<h4>
+											<b>
+												Our ethos! Is to provide an out of school service, which is a safe and caring environment within which all children who attend can relax, develop, learn as they play, and have fun.
+											</b>
+										</h4>
+										<hr/>
+										<h4>Suitable for ages 3 to 14 years.</h4>
+										<hr/>
+										<p>We hope that the information contained within our website answers any queries you may have.
+										<br>
+										A complete welcome pack is available to download on our
+										<?php echo "<a href='Harlequins" . str_replace( ' ', '', str_replace(' &amp; ', '_', $totalPages[ 4 ] ) ) . ".html' >" . $totalPages[ 4 ] ."</a>";?> page.
+										<br>
+										<br/><em>However, if you are unable to find the information you require.<br> Please do not hesitate to <?php echo "<a href='Harlequins" . str_replace( ' ', '', $totalPages[ 3 ] ) . ".html' >" . $totalPages[ 3 ] . "</a>"; ?></em></p>
+										<hr/><p>Hebble Harlequins &#64; Gail &amp; Jason's is a limited company, <br/>and is managed by the owners Gail Broadbent and Jason Spencer.</p><hr/>
+									
+									<div style="border-radius: 5px;" >
+										<a href="http://www.accuweather.com/en/gb/halifax/hx1-5/weather-forecast/331296" class="aw-widget-legal">
+										<!--
+										By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+										-->
+										</a><div id="awcc1390217580227" width="50%" class="aw-widget-current"  data-locationkey="331296" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1390217580227">
+										<script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script></div>
+									</div>
+								</div>
+<!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->						
+<?php include('bottomPage.php'); ?>

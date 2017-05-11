@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<?php include('head.php'); ?>
+	<style>
+		html, body {
+			font-size: 16px;
+		}
+		.frogPond {
+			background-color: #0071b9;
+			margin: 1em;
+			padding: 1em;
+			border: 0.125em solid aqua;
+			border-radius: 0.5em;
+		}
+		.frogPond h1 {
+			text-align: center;
+		}
+		.frogPond .actions {
+			margin: 1em 0 0 0;
+			padding: 0;
+		}
+		.frogPond .actions button {
+			display: inline-block;
+			margin: 0 0.75em 0 0;
+			background-color: aqua;
+			border: 0.125em solid darkblue;
+			padding: 0.25em;
+			border-radius: 0.25em;
+			font-size: 0.75em;
+			cursor: pointer;
+		}
+		.frogPond .frogs {
+			border: 0.25em solid aqua;
+			border-radius: 0.5em;
+			margin: 0;
+			padding: 0;
+		}
+		.frogPond .frogs li {
+			margin: 1em;
+			padding: 0.25em;
+			list-style: none;
+			font-weight: bold;
+			font-size: 1em;
+			border-radius: 0.25em;
+		}
+		.frogPond .m {
+			color: darkblue;
+			background-color: #1182ca;
+		}
+		.frogPond .f {
+			color: hotpink;
+			background-color: #ffcccc;
+		}
+	</style>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	 //                                                                                                                //
+	 //  Mr Nathan D. Spencer - BSc (Hons). Cert.HE                                                                    //
+	 //  19th July 2015                                                                                                //
+	 //                                                                                                                //
+	 //  11b Back Green,                                                                                               //
+	 //  Outlane,                                                                                                      //
+	 //  Huddersfield,                                                                                                 //
+	 //  West Yorkshire.                                                                                               //
+	 //  HD3 3YT.                                                                                                      //
+	 //                                                                                                                //
+	 //  Mobile: 07761 793 637                                                                                         //
+	 //  eMail: nathan.d.spencer@hotmail.com                                                                           //
+	 //                                                                                                                //
+	 //  Note:                                                                                                         //
+	 //        Normaly I would have had a crack at this in PHP, however I am currently switching internet providers.   //
+	 //        As a result, I have limited internet access (mobile only!).                                             //
+	 //                                                                                                                //
+	 //        This is the first time, I have coded OOP in JavaScript.  My experiance of OOP is primarily Java.        //
+	 //                                                                                                                //
+	 //                                                                                                                //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<body>
+		<div id='main'>  <!--  Added to marge with my ccs pages -->
+			<?php include('menubar.php'); ?>
+		<script>
+			var femaleNames = ["Alice", "Nadia", "Holly", "Sam", "Jane", "Isabella", "Jill"];  // Female names list
+			var maleNames = ["Tim", "John", "Steven", "Bob", "Jake", "Lucas", "Nathan"];  // Male names list
+			var maleOrfemale = ["m", "f"]; // Gender
+			var randomName;
+			var randomGender;
+			var countDuplicate = 0;
+			var newName;
+			
+			var performActions = function(e) {// Helper function for clicking buttons
+
+				switch(e.target.className) {
+					//
+					//  Random frog selection & gender was chosen, for testing.  User input could be added.
+					//
+					case 'add':
+						// Random gender [m or f].
+						randomGender = Math.floor(Math.random() * maleOrfemale.length);
+						if (randomGender == 1) { randomName = femaleNames[Math.floor(Math.random() * femaleNames.length)]; }
+						if (randomGender == 0) { randomName = maleNames[Math.floor(Math.random() * maleNames.length)]; }
+						
+						//this.gender = maleOrfemale[randomGender];
+						countDuplicate=0;
+						// Search for duplicate names
+						for ( i = 0; i < this.Frogs.length; i++) {
+								if (this.Frogs[i].name.substring(0, randomName.length) == randomName) {
+									countDuplicate++;
+									//alert(this.Frogs[i].name.substring(0, randomName.length) +" : "+ randomName + " - " + countDuplicate);
+								} else { newName = randomName; }
+							}
+							// newName = randomName;
+							// Add Roman numerals to duplicate names.
+							if (countDuplicate > 0) {
+								newName = randomName + " ";
+								for ( ii = 0; ii <= countDuplicate; ii++) {
+									if ((ii == 0) || (ii > 0 && ii < 3) || (ii > 5 && ii < 8) || (ii > 8 && ii < 13) || (ii >= 15 && ii < 18)) { newName = newName + "I"; }
+									if (ii == 3) { newName = randomName + " IV"; }
+									if ((ii == 4) || (ii >= 13 && ii < 15)){ newName = randomName + " V"; }
+									if (ii == 8 || 11 == 13) { newName = randomName + " XI"; }
+									// and so on...
+									
+									// TO REMOVE: 
+									//if (ii == 0) { newName = newName + "I"; }
+									//if ((ii > 5 && ii < 8) 
+									//	|| (ii > 8 && ii < 13)
+									//	|| (ii >= 15 && ii < 18)) { newName = newName + "I"; }
+									//if (ii == 8 || 11 == 13) { newName = randomName + " XI"; }
+									//if (ii > 8 && ii < 13) { newName = newName + "I"; }
+									//if (ii == 13) { newName = newName + "XI"; }
+									//if (ii >= 13 && ii < 15) { newName = newName + "V"; }
+									//if (ii >= 15 && ii < 18) { newName = newName + "I"; }
+								}
+							}
+							
+							// Add new frog, to this pond.
+							this.add([new Frog({ name : newName, gender : maleOrfemale[randomGender] })]);
+							break;
+
+					case 'kill':
+						//console.log('you hit kill');
+
+						// No frogs to kill.
+						if (this.Frogs.length == null) {
+							alert("No frogs in this pond!");
+							break;
+						}
+						
+						// Select frog at random.
+						var randomFrog = Math.floor(Math.random() * this.Frogs.length);
+
+						// Find the frog to be killed.
+						for ( i = 0; i < this.Frogs.length; i++) {
+							var x = document.getElementsByTagName("li")[i].getAttribute('data-frogid');
+							if (i == randomFrog) {
+								//alert(this.Frogs[i].name+" - Is Killed!");
+								document.getElementById(x).remove(); // removed from display
+								this.Frogs.splice(randomFrog, 1); // Frog killed!
+							}
+						}
+						// All frogs have been killed. Therefore, no more killing can be done!
+						if (this.Frogs.length == 0) {
+							alert("No more frogs to kill in this pond!");
+						}
+						break;
+
+					case 'breed':
+						//console.log('you hit breed');
+
+						// Ok! We need to have at least one female and one male frog, in order to breed!.
+						var numberFemales=0;
+						var numberMales=0;
+						if (this.Frogs.length >= 1) {
+							for ( i = 0; i < this.Frogs.length; i++) {
+								if (this.Frogs[i].gender == "f") { numberFemales++; }
+								if (this.Frogs[i].gender == "m") { numberMales++; }
+							}
+						}
+						// See if we can pair some frogs up.
+						if (numberFemales > 0 && numberMales > 0) {
+							//alert("We have a couple!");
+							
+							// Create One frog, for every female frog. (Don't know how many frogs one female frog produces, however for this test one is quite enough!)
+							for (f=0; f < numberFemales; f++) {
+								//var babyFrog = Object.create(Frog.prototype);
+								//alert(f);
+								// Random gender [m or f].  TODO: Repeated, should be in a function somewhere.		
+								randomGender = Math.floor(Math.random() * maleOrfemale.length);
+								if (randomGender == 1) { randomName = femaleNames[Math.floor(Math.random() * femaleNames.length)]; }
+								if (randomGender == 0) { randomName = maleNames[Math.floor(Math.random() * maleNames.length)]; }
+								countDuplicate=0;
+								//alert(numberFemales);	
+								// Search for duplicate names. TODO: Repeated, should be in a function somewhere.
+								for ( i = 0; i < this.Frogs.length; i++) {
+									if (this.Frogs[i].name.substring(0, randomName.length) == randomName) {
+										countDuplicate++;
+										//alert(this.Frogs[i].name.substring(0, randomName.length) +" : "+ randomName + " - " + countDuplicate);
+									} else { newName = randomName; }
+								}
+								//newName = randomName;
+								// Add Roman numerals to duplicate names. TODO: Repeated, should be in a function.
+								if (countDuplicate > 0) {
+								newName = randomName + " ";
+								for ( ii = 0; ii <= countDuplicate; ii++) {
+									if ((ii == 0) || (ii > 0 && ii < 3) || (ii > 5 && ii < 8) || (ii > 8 && ii < 13) || (ii >= 15 && ii < 18)) { newName = newName + "I"; }
+									if (ii == 3) { newName = randomName + " IV"; }
+									if ((ii == 4) || (ii >= 13 && ii < 15)){ newName = randomName + " V"; }
+									if (ii == 8 || 11 == 13) { newName = randomName + " XI"; }
+									// and so on...
+									}
+								}
+								//alert( _pond.length);						
+								this.add([new Frog({ name : newName, gender : maleOrfemale[randomGender] })]);
+								newName = "";
+							}
+						} else { alert("We need a male, and a female to breed!\nTry adding more frogs."); }
+						
+						break;
+				}
+			}, 
+			
+			Pond = function() {
+				this.create();
+			};
+
+			Pond.prototype = function() {
+				var _body, _frogs, _actions, /* DOM element holders */
+				_pond, /* reference to self */
+				Frogs, /* Frogs in Pond */
+
+				create = function() {
+					/* Set up DOM */
+					_body = document.createElement('div');
+					_body.className = 'frogPond';
+					_body.innerHTML = '<ul id="a" class="frogs"></ul><div class="actions"><button class="add">Add a Frog</button><button class="kill">Kill a frog</button><button class="breed">Encourage breeding</button></div>';
+					document.body.appendChild(_body);
+					_frogs = _body.getElementsByClassName('frogs')[0];
+					_actions = _body.getElementsByClassName('actions')[0];
+					/* End DOM Setup */
+
+					this.Frogs = [];
+					_pond = this;
+
+					_actions.addEventListener('click', function(e) { performActions.call(_pond, e); }, false);
+					/* perform an action on this pond only */
+
+					
+				}, add = function(frogs) {/* accepts array of frogs or single frog */
+					if (frogs) {
+						if (!frogs.propertyIsEnumerable(length) && typeof frogs.splice !== "function") { frogs = [frogs]; }
+					}
+					var i = 0, l = frogs.length;
+					for (; i < l; i++) { this.addFrog(frogs[i]); }
+				
+				}, addFrog = function(frog) {
+					/* only frogs allowed in this pond, this is a speciesist pond */
+					if ( frog instanceof Frog) {
+						frog.setId(this.Frogs[this.Frogs.length - 1] ? this.Frogs[this.Frogs.length - 1].getId() + 1 : 1);
+						this.Frogs.push(frog);
+
+						var _el = document.createElement('li');
+						
+						_el.setAttribute('id', frog.getId());  // This helped in the killing of a frog (or should I say, removing frog from display).
+						
+						_el.innerText = frog.name;
+						_el.className = frog.gender;
+						_el.setAttribute('data-frogid', frog.getId());
+						_frogs.appendChild(_el);
+					}
+				};
+
+				return { create : create, add : add, addFrog : addFrog };
+			}(),
+
+			Frog = function(data) { this.birth(data); };
+			
+			Frog.prototype = function() {
+				var _id, name, gender,
+				birth = function(frogData) { 
+					if ( frogData != null ) {
+						this.name = frogData.name;
+						this.gender = frogData.gender;
+					}
+				},
+				setId = function(id) { _id = parseInt(id); },
+				getId = function() { return _id; };
+				
+				return { birth : birth, setId : setId, getId : getId };
+			}();
+			
+				
+			var frogPond = new Pond();	
+			frogPond.add([new Frog({ name : "Frank", gender : "m" }), new Frog({ name : "Georgia", gender : "f" })]);
+		</script>
+		<?php include('footer.php'); ?>
+		</div>
+	</body>
+</html>

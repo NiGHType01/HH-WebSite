@@ -1,0 +1,13 @@
+body {
+	font-family:  Papyrus,  Avant Garde;
+    }
+#top {
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 1px solid gray;
+}
+#kts-carousel {
+	margin-left: 10%;
+	margin-right: 10%;
+	}

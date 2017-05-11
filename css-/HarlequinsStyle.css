@@ -1,0 +1,82 @@
+body {
+	overflow: hidden;
+	font-family: "Trebuchet MS", "Lucida Grande", Verdana, Arial, sans-serif; /* All font's to be this family, unless changed directly */
+	color: #142459; /* Content colour is set to this, unless changed directly */
+	text-align: center; /* All text to be "centred" unless changed directly */
+}
+/* Header style */
+#topImage {position:fixed; top:7px; left: 354px; height: 84px; }
+address {position:fixed; left: 400px; text-align: left; font-weight:bold; margin: auto 0 auto 5px; color: white;}
+address a:link {font-style:italic; color: white;}
+address a:hover {font-style:normal; text-decoration: none; color: #1D2A55;}
+address em {font-style:normal;}
+address.visible-desktop {font-size: 90%;}
+address.visible-desktop em {font-size: 130%;}
+address.visible-tablet {font-size: 80%; line-height: 1.3;}
+address.visible-tablet  em {font-size: 110%;}
+/* Menu(s) Style */
+.hhlogo {border-bottom: 1px dotted #A91624;}
+.hh_img { padding: 15px 0 15px;}
+.mainMenu {margin-left: 7px; margin-right: 7px; font-size: 12px;}
+.mainMenu a {font-weight:bold; text-shadow: 2px 2px 2px #142459; color: #F2F5A9; border: 1px solid #E53A16 ;}
+.mainMenu li {background-color: #48879A; border-radius: 5px;}
+#tabletMenu a {Width: 65px; }
+#phoneMenu {width: 70%;}
+.copyMe {font-size: 9px; line-height: 10px; color: white;}
+ 
+/* Scrolling wall Style */
+.wallscroll {background: white url(../images/note.gif) repeat-y 0 bottom;}
+
+/* Main content area style */
+#myCarousel {max-width: 55%; margin: 0 auto 0 auto;}
+#myCarousel img {border-radius: 15px; /* Rounded corners set at 15px */}
+.carousel-inner {
+	margin-top: 35px;
+	border: 1px solid gray; /* 1px size, solid border coloured gray */
+	border-radius: 15px; /* Rounded corners set at 15px */
+}
+em {font-weight: bold;}
+.sites {width: 80%; height: 300px; margin-bottom: 25px;} /* sites ='ing iframes, I am attemping to make a standard style for all iframes I use */
+#calender {width: 80%; height: 450px; margin-top: 15px; overflow:hidden;}
+#map {width: 60%; height: 350px; } /* My google may sizing */
+#ofs {
+	background-color: white;
+	border-radius: 3px;
+	-o-box-shadow:      12px 12px 29px #555;
+	-icab-box-shadow:   12px 12px 29px #555;
+	-khtml-box-shadow:  12px 12px 29px #555;
+	-moz-box-shadow:    12px 12px 29px #555;
+	-webkit-box-shadow: 12px 12px 29px #555;
+	box-shadow:         12px 12px 29px #555;
+}
+#welcomeText {width:70%; margin: 0 auto 0 auto;}
+#content {overflow-y:scroll; overflow-x: hidden; } /* Main content area */
+iframe { /* iframe, love to hate them, but kewl used in the right way... Maybe, I need to work on this skill :-) */
+	margin: 20px 0 20px 0;
+	border: .3em solid black; /* Same old, however just playing with "em" here */
+	border-bottom-left-radius: 5px; /* this is my work! */
+    border-bottom-right-radius: 5px; /* this is also my work */
+    box-shadow: 3px 3px 3px 3px #49964d; /* yep! my work, shadow 3px deep all round and yes, I wanted that colour */
+	-moz-transform: scale(1) rotate(.3deg) translateX(2px) translateY(5px) skewX(5deg) skewY(5deg);     /*********************************/
+	-webkit-transform: scale(1) rotate(.3deg) translateX(2px) translateY(5px) skewX(5deg) skewY(5deg);  /*                               */
+	-o-transform: scale(1) rotate(.3deg) translateX(2px) translateY(5px) skewX(5deg) skewY(5deg);       /* Yes, taken from another site. */
+	-ms-transform: scale(1) rotate(.3deg) translateX(2px) translateY(5px) skewX(5deg) skewY(5deg);      /*                               */
+	transform: scale(1) rotate(.3deg) translateX(2px) translateY(5px) skewX(5deg) skewY(5deg);}         /*********************************/
+.friends {display: block;}
+.friends img {height: 49px;}
+.promoLink  a {
+	text-shadow: 2px 2px 2px #b53257;
+	color: #142459;
+	border: 1px solid #E53A16;
+	background-color: #48879A;
+	border-radius: 5px;
+	padding: 4px 10px 4px 10px;
+}
+.modal-body {
+	background-image: url();
+	}
+.promoLink a:hover {text-decoration: none;  background-color: #48b79A;}
+.clbInfo strong {font-size: 18px;}
+.lg {
+background-color:LightGray;
+}

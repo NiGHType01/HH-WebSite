@@ -1,0 +1,93 @@
+<?php 
+$pageName = "Forms &amp; PDFs";
+include('totalPages.php');
+include('HolidayClub.php');
+include('head.php');
+include('header.php');
+include('nav.php');
+include('modalpanel.php');
+include('scrollBarContainer.php');
+?>
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->
+								<!--<h1><?php echo $pageName; ?></h1>-->
+								<h1>Downloadable forms</h1>
+								<table class="hhTable hhpdfs" >
+									<thead><th>Online</th><th>Word</th><th>PDF</th><th>Form Title</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td style='background-color: LightGray' colspan='4'>Hebble Harlequins Club</td>
+										</tr>
+										<tr>
+											<td ></td>
+											<td><a href="forms/HHwelcomepack2016.docx"><img src="images/wdicon.gif" width="50px" alt="Hebble Harlequins Welcome Pack 2016 WORD"></a></td>
+											<td><a href="forms/HHwelcomepack2016.pdf" ><img src="images/pdf.gif" width="50px" alt="Hebble Harlequins Welcome Pack 2016 PDF"></a></td>
+											<td><strong>Welcome Pack</strong><br /><small>(Updated August 2016)</small></td>
+										</tr>
+										<tr>
+											<td ></td>
+											<td><a href="forms/termtimebookingform2016-17.docx"><img src="images/wdicon.gif" width="50px" alt="Hebble Harlequins Term Time Booking Form 16/17 WORD"></a></td>
+											<td><a href="forms/termtimebookingform2016-17.pdf" ><img src="images/pdf.gif" width="50px" alt="Hebble Harlequins Term Time Booking Form 16/17 PDF"></a></td>
+											<td><strong>Term Time Booking Form</strong><br /><small>(Uploaded Jan 17)</small></td></td>
+										</tr>
+										<tr>
+											<td ></td>
+											<td><a href="forms/HHregistrationform2016-17.doc"><img src="images/wdicon.gif" width="50px" alt=""></a></td>
+											<td><a href="forms/HHregistrationform2016-17.pdf" ><img src="images/pdf.gif" width="50px" alt=""></a></td>
+											<td><strong>Registration Form</strong><br />[ 1st August 2016 - 31st July 2017 ]</td>
+										</tr>
+<?php
+$today = getdate();
+if ($today['mday'] < "21") {
+							
+printf("										<tr>
+											<td ></td>
+											<td><a href='forms/2017EasterHolsBF.docx'><img src='images/wdicon.gif' width='50px' alt=''></a></td>
+											<td><a href='forms/2017EasterHolsBF.pdf' ><img src='images/pdf.gif' width='50px' alt=''></a></td>
+											<td><strong>Easter Holiday Booking Form</strong><br /><small>Return by 3rd April</small></td>
+										</tr>");
+}
+?>
+<!--										<tr>
+											<td ></td>
+											<td><a href="forms/2016ChristmasHolsBF.docx"><img src="images/wdicon.gif" width="50px" alt=""></a></td>
+											<td><a href="forms/2016ChristmasHolsBF.pdf" ><img src="images/pdf.gif" width="50px" alt=""></a></td>
+											<td><strong>Christmas 2016 Holiday Booking Form</strong><br /><small>Return by 7th December 2016</small></td>
+										</tr> -->
+										<tr>
+											<td colspan="2" ></td>
+											<td><a href="https://reports.ofsted.gov.uk/…/fi…/2570148/urn/EY431332.pdf" ><img src="images/pdf.gif" width="50px" alt=""></a></td>
+											<td><strong>Ofsted Inspection Report</strong><br />[ Inspection date: 3rd May 2016 ]</td>
+										</tr>
+										
+<!--										<tr>
+											<td ></td>
+											<td><a href=""><img src="images/wdicon.gif" width="50px" alt=""></a></td>
+											<td><a href=""><img src="images/pdf.gif" width="50px" alt=""></a></td>
+											<td><strong>Christmas Holiday 2015 Booking Form</strong><br />Please contact club.<br />
+											</td>
+										</tr>	-->
+										<tr>
+											<td style='background-color: LightGray' colspan='4'>Hebble Harlequins @ Bolton Brow</td>
+										</tr>
+										<tr>
+											<td ></td>
+											<td><a href="forms/BBwelcomepack2015.docx"><img src="images/wdicon.gif" width="50px" alt="Bolton Brow Welcome Pack WORD"></a></td>
+											<td><a href="forms/BBwelcomepack2015.pdf" ><img src="images/pdf.gif" width="50px" alt="Bolton Brow Welcome Pack PDF"></a></td>
+											<td><strong>Welcome Pack (Bolton Brow)</strong><br /><small>(Updated August 2015)</small></td>
+										</tr>
+										<tr>
+											<td colspan="2" ></td>
+											<td><a href="https://reports.ofsted.gov.uk/provider/files/2601303/urn/EY482472.pdf" ><img src="images/pdf.gif" width="50px" alt=""></a></td>
+											<td><strong>Ofsted Inspection Report</strong><br />[ Inspection date: 27th September 2016 ]</td>
+										</tr>
+<!--										<tr>
+											<td ></td>
+											<td><a href="forms/2014SummerHols.docx"><img src="images/wdicon.gif" width="50px" alt=""></a></td>
+											<td><a href="forms/2014SummerHols.pdf" ><img src="images/pdf.gif" width="50px" alt=""></a></td>
+											<td><strong>Summer Holiday 2014</strong><br><b>Due <i>Monday 4th July 2014.</i></b></td>
+										</tr> -->										
+									</tbody>
+								</table>
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->						
+<?php include('bottomPage.php'); ?>

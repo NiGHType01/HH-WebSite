@@ -1,0 +1,29 @@
+php_value session.gc_maxlifetime 72000
+php_value session.cookie_lifetime 72000
+AddType application/x-httpd-php .html .htm 
+
+RewriteEngine on
+RewriteBase /
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www.)?hebbleharlequins.co.uk/.*$ [NC]
+RewriteRule .(gif|jpg|swf|flv|png)$ /feed/ [R=302,L]
+RewriteRule ^/Sessions&Fees/?$ harlequinssessions_fees.html [NC,L]
+
+ErrorDocument 404 /Harlequins_400s.html
+ErrorDocument 401 /Harlequins_400s.html
+ErrorDocument 403 /Harlequins_400s.html
+
+order allow,deny
+	deny from 82.94.
+	deny from virpus.com
+	deny from 157.55.39.
+	deny from 117.78.13.
+	deny from 85.114.139.
+	deny from 189.153.149.
+	deny from 180.76.6.
+	deny from 185.31.161.
+	deny from 202.46.
+	deny from 176.57.
+	deny from 86.146.38.163
+	deny from 94.8.50.119
+allow from all

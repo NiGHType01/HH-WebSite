@@ -1,0 +1,86 @@
+<?php 
+$pageName = "Fun Page";
+include('totalPages.php');
+include('HolidayClub.php');
+include('head.php');
+include('header.php');
+include('nav.php');
+include('modalpanel.php');
+include('scrollBarContainer.php');
+?>
+			<div id="gridstuff">
+				<div class="gridster nav">
+					<ul>
+						<li id="highimage" data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+							<img src="images/fun/1.png" alt="icon"/>
+						</li>
+						<li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+							<img src="images/fun/3.png"   alt="icon"/>
+						</li>
+						<li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
+							<img src="images/fun/4.png"   alt="icon"/>
+						</li>
+
+						<li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+							<img src="images/fun/5.png"   alt="icon"/>
+						</li>
+						<li data-row="2" data-col="2" data-sizex="4" data-sizey="2">
+								<video width="620" height="300" controls>
+									<source src="images/fun/10749769_724948097583874_1348792076_n.mp4" type="video/mp4">
+									<source src="images/fun/10749769_724948097583874_1348792076_n.mp4" type="video/ogg">
+									Your browser does not support the video tag.
+								</video>
+						</li>
+						<li data-row="4" data-col="2" data-sizex="1" data-sizey="1">
+							<img src="images/fun/15.png"   alt="icon"/>
+						</li>
+
+						<li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+							<img src="images/fun/12.png"   alt="icon"/>
+						</li>
+						<li id="wideimage" data-row="4" data-col="3" data-sizex="2" data-sizey="1">
+							<img src="images/fun/14.png"   alt="icon"/>
+						</li>
+
+						<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+							<img src="images/fun/19.png"   alt="icon"/>
+						</li>
+
+						<li id="wideimag2" data-row="1" data-col="5" data-sizex="2" data-sizey="1">
+							<img src="images/fun/9.png"   alt="icon"/>
+						</li>
+						<li data-row="4" data-col="5" data-sizex="1" data-sizey="1">
+							<img src="images/fun/18.png"   alt="icon"/>
+						</li>
+						<li data-row="2" data-col="6" data-sizex="1" data-sizey="1">
+							<img src="images/fun/8.png"   alt="icon"/>
+						</li>
+						<li data-row="3" data-col="6" data-sizex="1" data-sizey="1">
+							<img src="images/fun/7.png"   alt="icon"/>
+						</li>
+						<li data-row="4" data-col="6" data-sizex="1" data-sizey="1">
+							<img src="images/fun/6.png"   alt="icon"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap -->
+		<script src="js/prettify.js"></script>
+		<script src="js/jquery-latest.js"></script>
+		<script src="js/jquery.gridster.js"></script>
+		<script src="js/bootstrap.js"></script>
+<!-- jquery functions to make the moveable grid work
+		================================================== -->
+		<script type="text/javascript">
+			$(function() {//DOM Ready
+				$(".gridster ul").gridster({ widget_margins : [10, 10], widget_base_dimensions : [140, 140] });
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {//DOM Ready
+				var gridster = $(".gridster ul").gridster().data('gridster');
+			});
+		</script>
+<?php include('bottomPage.php'); ?>

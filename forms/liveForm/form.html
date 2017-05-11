@@ -1,0 +1,141 @@
+<?php 
+$pageName = "Forms &amp; PDFs";
+include('../../totalPages.php');
+include('../../HolidayClub.php');
+include('../../head.php');
+include('../../header.php');
+include('../../nav.php');
+include('../../modalpanel.php');
+include('../../scrollBarContainer.php');
+?>
+ <!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><?php echo "$pageName" ?></h1>
+		<form id="form_760199" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Christmas Holiday online booking form</h2>
+			<p>Please complete and return the Christmas Holiday booking form below by<br/><b>Monday 16th December 2103</b></p>
+		</div>						
+			<ul >
+				<li id="li_1" >
+					<label class="description" for="element_1">Child's Name </label>
+					<div>
+						<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+					</div>
+					<p class="guidelines" id="guide_1"><small>Please enter child's full name</small></p> 
+				</li>
+				<li id="li_4" >
+					<label class="description" for="element_4">Child's Date Of Birth </label>
+					<span>
+						<input id="element_4_2" name="element_4_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+						<label for="element_4_2">DD</label>
+					</span>
+					<span>
+						<input id="element_4_1" name="element_4_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+						<label for="element_4_1">MM</label>
+					</span>
+					<span>
+						<input id="element_4_3" name="element_4_3" class="element text" size="4" maxlength="4" value="" type="text">
+						<label for="element_4_3">YYYY</label>
+					</span>
+	
+					<span id="calendar_4">
+						<img id="cal_img_4" class="datepicker" src="calendar.gif" alt="Pick a date.">	
+					</span>
+					<script type="text/javascript">
+						Calendar.setup({
+						inputField	 : "element_4_3",
+						baseField    : "element_4",
+						displayArea  : "calendar_4",
+						button		 : "cal_img_4",
+						ifFormat	 : "%B %e, %Y",
+						onSelect	 : selectDate
+						});
+					</script>
+					<p class="guidelines" id="guide_4"><small>Please enter the child's date of birth.</small></p> 
+				</li>
+				<li id="li_2" >
+					<label class="description" for="element_2">Address </label>
+					<div>
+						<textarea id="element_2" name="element_2" class="element textarea medium"></textarea> 
+					</div><p class="guidelines" id="guide_2"><small>Please enter the full address we have on our system, for this child.</small></p> 
+					</li>		<li id="li_3" >
+					<label class="description" for="element_3">Contact Number </label>
+					<span>
+						<input id="element_3_1" name="element_3_1" class="element text" size="4" maxlength="3" value="" type="text"> -
+						<label for="element_3_1">( #### )</label>
+					</span>
+					<span>
+						<input id="element_3_2" name="element_3_2" class="element text" size="6" maxlength="6" value="" type="text">
+						<label for="element_3_2">######</label>
+					</span>
+					<p class="guidelines" id="guide_3"><small>Please enter a contact number.</small></p> 
+				</li>
+				<li id="li_6" >
+					<label class="description" for="element_6">Monday 23rd December 2013 </label>
+					<span>
+						<input id="element_6_1" name="element_6" class="element radio" type="radio" value="1" />
+						<label class="choice" for="element_6_1">Full Day (7am - 6pm)</label>
+						<input id="element_6_2" name="element_6" class="element radio" type="radio" value="2" />
+						<label class="choice" for="element_6_2">Half Day (9am - 3:30pm)</label>
+					</span> 
+				</li>
+				<li id="li_7" >
+					<label class="description" for="element_7">Tuesday 24th December 2013 </label>
+					<span>
+						<input id="element_7_1" name="element_7" class="element radio" type="radio" value="1" />
+						<label class="choice" for="element_7_1">Half Day (9am - 1pm)</label>
+					</span> 
+				</li>
+				<li id="li_8" >
+					<label class="description" for="element_8">Thursday 2nd January 2014 </label>
+					<span>
+						<input id="element_8_1" name="element_8" class="element radio" type="radio" value="1" />
+						<label class="choice" for="element_8_1">Full Day (7am - 6pm)</label>
+						<input id="element_8_2" name="element_8" class="element radio" type="radio" value="2" />
+						<label class="choice" for="element_8_2">Half Day (9am - 3:30pm)</label>
+					</span> 
+				</li>
+				<li id="li_9" >
+					<label class="description" for="element_9">Wednesday 3rd January 2014  </label>
+					<span>
+						<input id="element_9_1" name="element_9" class="element radio" type="radio" value="1" />
+						<label class="choice" for="element_9_1">Full Day (7am - 6pm)</label>
+						<input id="element_9_2" name="element_9" class="element radio" type="radio" value="2" />
+						<label class="choice" for="element_9_2">Half Day (9am - 3:30pm)</label>
+					</span> 
+				</li>
+				<li id="li_5" >
+					<label class="description" for="element_5">Total </label>
+					<span class="symbol">&#163;</span>
+					<span>
+						<input id="element_5_1" name="element_5_1" class="element text currency" size="10" value="" type="text" /> .		
+						<label for="element_5_1">Pounds</label>
+					</span>
+					<span>
+						<input id="element_5_2" name="element_5_2" class="element text" size="2" maxlength="2" value="" type="text" />
+						<label for="element_5_2">Pence</label>
+					</span>
+					</li>
+						<li id="li_10" >
+						<label class="description" for="element_10">Please confirm that details and price above is correct. </label>
+					<span>
+						<input id="element_10_1" name="element_10_1" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_10_1">I agree.</label>
+					</span> 
+					</li>
+					<li class="buttons">
+						<input type="hidden" name="form_id" value="760199" />						
+						<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+					</li>
+				</ul>
+			</form>	
+			<div id="footer">
+				Generated by
+			</div>
+		</div>
+		<img id="bottom" src="bottom.png" alt="">
+<!-- ////////////////////////////////////  Above is standard HH_template http //////////////////////////////////// -->						
+<?php include('bottomPage.php'); ?>

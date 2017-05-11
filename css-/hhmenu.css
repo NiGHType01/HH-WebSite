@@ -1,0 +1,32 @@
+body {
+	background-image:url('../images/midbannerleft.gif');
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;
+}
+#button {
+	width: 12em;
+	border-right: 1px solid #000;
+	padding: 0 0 1em 0;
+	margin-bottom: 1em;
+	background-color: #a20e59;
+	color: #333;
+}
+#button ul {
+	list-style: none;
+	margin: 0;padding: 0;border: none;
+}
+	
+#button li {
+	border-bottom: 1px solid #142459;margin: 0;list-style: none;list-style-image: none;
+}
+	
+#button li a {
+	display: block;padding: 2px 2px 2px 0.5em;border-left: 10px solid #a81423;border-right: 10px solid #508fc4;background-color: #4996ad;color: #fff;text-decoration: none;width: 100%;
+}
+
+#button li a {
+	width: auto;
+}
+
+#button li a:hover {
+	border-left: 10px solid #142459;border-right: 10px solid #49964d;background-color: #49964d;color: #142459;
+}

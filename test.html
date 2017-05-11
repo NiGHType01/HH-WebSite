@@ -1,0 +1,16 @@
+<html>
+<head>
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $(window).bind("resize", function() {
+            $('#someElement').toggle($(this).width() >= 1024);  
+        }).trigger("resize");
+    });
+    </script>
+</head>
+<body>
+    <div id="someElement">SOME ELEMENT</div>
+</body>
+</html>
