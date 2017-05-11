@@ -38,7 +38,7 @@ include('scrollBarContainer.php');
 										</tr>
 <?php
 $today = getdate();
-if ($today['mday'] < "21") {
+if ($today['mday'] < "21" && $today['mon'] == "4") {
 							
 printf("										<tr>
 											<td ></td>
